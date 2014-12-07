@@ -1,12 +1,3 @@
-# [![MEAN Logo](http://www.mean.io/img/logos/meanlogo.png)](http://mean.io/) MEAN Stack
-
-[![Build Status](https://travis-ci.org/linnovate/mean.svg?branch=master)](https://travis-ci.org/linnovate/mean)
-[![Dependencies Status](https://david-dm.org/linnovate/mean.svg)](https://david-dm.org/linnovate/mean)
-
-MEAN is a boilerplate that provides a nice starting point for [MongoDB](http://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](http://angularjs.org/) based applications. It is designed to give you a quick and organized way to start developing MEAN based web apps with useful modules like Mongoose and Passport pre-bundled and configured. We mainly try to take care of the connection points between existing popular frameworks and solve common integration problems.
-
-## Prerequisites
-* Node.js - Download and Install [Node.js](http://www.nodejs.org/download/). You can also follow [this gist](https://gist.github.com/isaacs/579814) for a quick and easy way to install Node.js and npm
 * MongoDB - Download and Install [MongoDB](http://docs.mongodb.org/manual/installation/) - Make sure `mongod` is running on the default port (27017).
 
 ### Tools Prerequisites
@@ -37,8 +28,7 @@ $ npm install -g grunt-cli
   Install MEAN CLI:
 
     $ [sudo] npm install -g meanio@latest
-    $ mean init <myApp>
-    $ cd <myApp> && npm install
+    $ cd vloging && npm install
 
   We recommend using [Grunt](https://github.com/gruntjs/grunt-cli) to start the server:
 
@@ -159,39 +149,3 @@ git remote add origin <remote repository URL>
 git push -u origin master
 ```
 
-
-## Getting Started
-We pre-included an article example. Check out:
-
-  * [The Model](packages/articles/server/models/article.js) - Where we define our object schema.
-  * [The Controller](packages/articles/server/controllers/articles.js) - Where we take care of our backend logic.
-  * [NodeJS Routes](packages/articles/server/routes/articles.js) - Where we define our REST service routes.
-  * [AngularJs Routes](packages/articles/public/routes/articles.js) - Where we define our CRUD routes.
-  * [The AngularJs Service](packages/articles/public/services/articles.js) - Where we connect to our REST service.
-  * [The AngularJs Controller](packages/articles/public/controllers/articles.js) - Where we take care of  our frontend logic.
-  * [The AngularJs Views Folder](packages/articles/public/views) - Where we keep our CRUD views.
-
-## Heroku Quick Deployment
-Before you start make sure you have the [Heroku toolbelt](https://toolbelt.heroku.com/)
-installed and an accessible MongoDB instance - you can try [MongoHQ](http://www.mongohq.com/)
-which has an easy setup).
-
-Add the db string to the production env in server/config/env/production.js.
-
-```
-git init
-git add .
-git commit -m "initial version"
-heroku apps:create
-heroku config:add NODE_ENV=production
-heroku config:add BUILDPACK_URL=https://github.com/mbuchetics/heroku-buildpack-nodejs-grunt.git
-git push heroku master
-heroku config:set NODE_ENV=production
-```
-
-## More Information
-  * Visit us at [Linnovate.net](http://www.linnovate.net/).
-  * Visit our [Ninja's Zone](http://www.meanleanstartupmachine.com/) for extended support.
-
-## License
-[The MIT License](http://opensource.org/licenses/MIT)
