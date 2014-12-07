@@ -1,0 +1,15 @@
+{
+  "name": "video",
+  "version": "0.0.1",
+  "description": "Simple display of video.js within mean.io",
+  "author": {
+    "name": "Lior Kesos"
+  },
+  "mean": "0.4.0",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  },
+  "dependencies": {},
+  "license": "MIT"
+}
